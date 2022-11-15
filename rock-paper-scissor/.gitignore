@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+*.xd
+*.fig
+.DS_Store
+*.sketch
 
 # testing
 /coverage

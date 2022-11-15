@@ -1,0 +1,29 @@
+.rules-r-p-s{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+.rules-r-p-s>div{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-r-p-s>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rules-r-p-s>div>div>button{
+    align-self: flex-end;
+    padding: 1%;
+    border-radius: 100px;
+    border:none;
+    cursor: pointer;
+}

@@ -1,0 +1,90 @@
+.cont-buttons-options{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.optionsButton{
+    z-index: 999;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    transform: translateZ(-100px);
+    cursor: pointer;
+}
+
+.display{
+    display: none;
+}
+
+.visible{
+    display: flex;
+    top: 0% !important;
+    left: 10% !important; 
+    pointer-events: none;  
+}
+
+.visible-right{
+    top: 0% !important;
+    right: 10% !important; 
+    position: absolute;
+}
+/* .move-left{
+    top: 0% !important;
+    left: 10% !important;
+    bottom: 100% !important; 
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+} */
+
+/* CLASES ESLITOS PARA DORDES DE BOTON */
+.rock{
+    background: linear-gradient( to top, hsl(39, 89%, 49%) ,hsl(40, 84%, 53%));
+}
+.paper{
+    background: linear-gradient( to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+.scissors{
+    background: linear-gradient( to top, hsl(349, 71%, 52%) ,hsl(349, 70%, 56%));
+}
+.lizard{
+    background: linear-gradient( to top, hsl(261, 73%, 60%) ,hsl(261, 72%, 63%));
+}
+.vulcano{
+    background: linear-gradient( to top, hsl(189, 59%, 53%) ,hsl(189, 58%, 57%));
+}
+/* 
+.msg-button-post-play{
+} */
+
+.msg-button-post-play{
+    width: 40%;
+    height: 55%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.msg-button-post-play>button{
+    width: 70%;
+    text-align: center;
+    font-size: 11px;
+    line-height: 28px;
+    color: red;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.msg-button-post-play>p{
+    font-size: 36px;
+    text-transform: uppercase;
+}
