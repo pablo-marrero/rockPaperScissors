@@ -57,9 +57,6 @@
 .vulcano{
     background: linear-gradient( to top, hsl(189, 59%, 53%) ,hsl(189, 58%, 57%));
 }
-/* 
-.msg-button-post-play{
-} */
 
 .msg-button-post-play{
     width: 40%;
@@ -111,5 +108,27 @@
     }
     .msg-button-post-play>button{
         margin-bottom: 3%;
+    }
+}
+
+
+/**************************************/
+@media(max-width:375px){
+    .msg-button-post-play{
+        height: 80%;
+        width: 50%;
+        margin-left: 0;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .msg-button-post-play>p{
+        font-size: 30px;
+        margin-bottom: 5%;
+        text-transform: uppercase;
+    }
+    .visible{
+        margin-left: 0px !important;
     }
 }

@@ -126,3 +126,12 @@
         top:20%
     }
 }
+
+
+/* ******************************* */
+/* @media(max-width:320px){
+    .square>div:nth-child(1){
+        left: 50%;
+        margin-left: 0px;
+    }
+} */

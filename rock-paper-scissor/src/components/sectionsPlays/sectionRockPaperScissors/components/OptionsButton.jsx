@@ -64,10 +64,10 @@ export const OptionsButton = ({ value, url }) => {
       </div>
       {first && (
         <>
-          <div className="msg-button-post-play">
+          <pre className="msg-button-post-play">
             <button onClick={() => resetValues()}>PLAY AGAIN</button>
             <p>{first.ret.msg}</p>
-          </div>
+          </pre>
         </>
       )}
       {first && (
