@@ -6,7 +6,6 @@ export const styleslectOptions = (value) => {
     console.log(element.attributes.data_value.textContent);
     if (element.attributes.data_value.textContent === value) {
       element.classList.add("visible");
-      element.classList.add("move-left");
     } else {
       element.classList.add("display");
       return;
@@ -20,10 +19,6 @@ export const resetStylesOptions = () => {
 
   buttons.forEach((element) => {
     element.classList.remove("visible");
-    element.classList.remove("move-left");
     element.classList.remove("display");
-    element.classList.remove("move-left");
   });
 };
-
-// || element.innerHTML === valueSitem

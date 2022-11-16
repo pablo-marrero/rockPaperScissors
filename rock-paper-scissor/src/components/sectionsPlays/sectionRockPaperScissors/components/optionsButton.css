@@ -15,7 +15,6 @@
     background-color: white;
     border-radius: 50%;
     border: none;
-    transform: translateZ(-100px);
     cursor: pointer;
 }
 
@@ -32,27 +31,25 @@
 
 .visible-right{
     top: 0% !important;
-    right: 10% !important; 
+    right: 10% !important;
+    left: unset !important;
+    animation: none !important;
+    /* left: 90% !important; */
     position: absolute;
 }
-/* .move-left{
-    top: 0% !important;
-    left: 10% !important;
-    bottom: 100% !important; 
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-} */
 
 /* CLASES ESLITOS PARA DORDES DE BOTON */
 .rock{
     background: linear-gradient( to top, hsl(39, 89%, 49%) ,hsl(40, 84%, 53%));
+    /* animation: buttonCenter 1.5s ease-out; */
 }
 .paper{
     background: linear-gradient( to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    /* animation: buttonCenterTwo 1.5s ease-out; */
 }
 .scissors{
     background: linear-gradient( to top, hsl(349, 71%, 52%) ,hsl(349, 70%, 56%));
+    /* animation: buttonCenterTree 1.5s ease-out; */
 }
 .lizard{
     background: linear-gradient( to top, hsl(261, 73%, 60%) ,hsl(261, 72%, 63%));
@@ -72,6 +69,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    animation: none !important;
 }
 .msg-button-post-play>button{
     width: 70%;
@@ -87,4 +85,31 @@
 .msg-button-post-play>p{
     font-size: 36px;
     text-transform: uppercase;
+}
+
+
+/* @keyframes buttonCenter {
+    from{
+        bottom: 50%;
+    }
+} */
+
+@keyframes buttonCenterTwo {
+    from{
+        left: 35%;
+    }
+}
+@keyframes buttonCenterTree {
+    from{
+        right: 35%;
+    }
+}
+@media(max-width:425px){
+    .msg-button-post-play{
+        height: 100%;
+        justify-content: center;
+    }
+    .msg-button-post-play>button{
+        margin-bottom: 3%;
+    }
 }

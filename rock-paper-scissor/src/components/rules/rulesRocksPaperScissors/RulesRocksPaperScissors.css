@@ -22,8 +22,26 @@
 
 .rules-r-p-s>div>div>button{
     align-self: flex-end;
-    padding: 1%;
+    padding: 5%;
     border-radius: 100px;
     border:none;
     cursor: pointer;
+    background-image: url("../../../images/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ********************************************* */
+@media(max-width:375px){
+
+    .rules-r-p-s>div>div{
+        width: 80%;
+    }
+
+    .rules-r-p-s>div>div>img{width: 100%;}
+
+    .rules-r-p-s>div>div>button{
+        position: absolute;
+        bottom: 8%;
+        left: 45%;
+    }
 }

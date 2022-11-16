@@ -12,7 +12,7 @@ export const HeaderRockPaperScissorts = () => {
         <img src={imgLogo} alt="logo-rock-paper-scissors" />
       </picture>
       <div>
-        <p>Scrore</p>
+        <p>SCORE</p>
         <p>{playDificult.score}</p>
       </div>
     </header>

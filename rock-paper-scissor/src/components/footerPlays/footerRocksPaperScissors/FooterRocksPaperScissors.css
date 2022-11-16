@@ -18,3 +18,14 @@
     cursor: pointer;
     text-transform: uppercase;
 }
+
+@media(max-width:425px){
+    .footer-r-p-s{
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    .footer-r-p-s>button{
+        padding: 1% 2%;
+        margin: auto;
+    }
+}

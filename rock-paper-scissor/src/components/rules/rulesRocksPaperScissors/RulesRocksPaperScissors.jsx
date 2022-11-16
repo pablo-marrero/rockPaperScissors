@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import imgRulesEasy from "../../../images/image-rules.svg";
 import "./RulesRocksPaperScissors.css";
-import imgClose from "../../../images/icon-close.svg";
 import imgRulesHard from "../../../images/image-rules-bonus.svg";
 import { usePlayContext } from "../../../context/context";
 
@@ -23,9 +22,7 @@ export const RulesRocksPaperScissors = ({ setAddClass }) => {
     <article className="rules-r-p-s">
       <div>
         <div>
-          <button onClick={removeRules}>
-            <img src={imgClose} alt="icon-close" />
-          </button>
+          <button onClick={removeRules}></button>
           <h2>RULES</h2>
           <img src={img} alt="rules-easy" />
         </div>
